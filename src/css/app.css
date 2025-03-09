@@ -1,25 +1,167 @@
-#app {
-  position: absolute;
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-
-#app .container {
-  width: 376px;
-  height: 666px;
-  z-index: 100;
-
+  justify-content: space-between;
   background: white;
-  border-radius: 3px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+  padding: 14px 20px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-#app .container-view {
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+nav a.active {
+  border-bottom: 3px solid #ff6600;
+  padding-bottom: 6px;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+/* Activity Feed Container */
+.activity-feed {
+  max-width: 450px;
+  margin: auto;
   padding: 20px;
 }
 
+/* Archive Button */
+.archive-button {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+  transition: background 0.2s ease-in-out;
+}
+
+.archive-button:hover {
+  background: #e0e0e0;
+}
+
+/* Date Header */
+.date-header {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #888;
+  margin: 15px 0;
+}
+
+/* Call Item */
+.call-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 15px;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  max-width: 300px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.call-item:hover {
+  transform: translateY(-3px);
+}
+
+/* Call Icon */
+.call-icon {
+  background: #ff6600;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.call-icon img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Call Details */
+.call-details {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.call-number {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.call-info {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Call Time */
+.call-time {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  padding: 12px 20px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #777;
+}
+
+.bottom-nav .active {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.bottom-nav img {
+  width: 28px;
+  height: 28px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
