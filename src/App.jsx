@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route, Link, useParams } from "react-router-dom";
-import './styles/app.css';
+import './css/app.css';
 const BASE_URL = "https://aircall-api.onrender.com";
 
 function App() {
